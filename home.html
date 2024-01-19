@@ -1,0 +1,21 @@
+<html>
+          <head> 
+          <style>
+          h1{font-size: 70;color:rgb(236, 174, 5);}
+          pre{color: rgb(8, 41, 186);font-size: xxx-large;font-weight: bolder;}
+          .submit{width: 300;height: 80;font-size: 20;color:saddlebrown;cursor:pointer;}
+          </style>
+
+          </head>
+<body>
+<form action="{{url_for('predict')}}" method="post">
+<center>
+<br><h1>Bank Note Is Oringinal Or Duplicate ? </h1><br>
+<pre>
+(1) Enter variance : <input placeholder="Enter variance number" style="height: 45;font-size: 30;" type="number" name="variance"><br><br> (2) Enter skewness : <input placeholder="Enter skewness number" type="number" name="skewness" style="height: 45;font-size: 30;"> <br><br>(3) Enter curtosis : <input placeholder="Enter curtosis number" type="number" name="curtosis" style="height: 45;font-size: 30;"> <br><br>(4) Enter entropy : <input placeholder="Enter entropy number" type="number" name="entropy" style="height: 45;font-size: 30;"> 
+<br><input style="font-size:23;font-weight: bold;" class="submit" type="submit" name="submit" value="submit to check the Note">
+</pre>
+</center>
+</form>
+</body>
+</html>
